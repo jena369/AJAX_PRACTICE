@@ -1,27 +1,27 @@
-// //displays the country-population
-// var request = new XMLHttpRequest();
-// request.open("GET", "https://restcountries.com/v3.1/all");
-// request.send();
+//displays the country-population
+var request = new XMLHttpRequest();
+request.open("GET", "https://restcountries.com/v3.1/all");
+request.send();
 
-// request.onload = () => {
-//     var res = JSON.parse(request.response);
+request.onload = () => {
+    var res = JSON.parse(request.response);
 
-//     for (var i = 0; i < res.length; i++) {
-//         console.log("Country : ", res[i].name.common, ", Region : ", res[i].region, ", SubRegion : ", res[i].subregion, ", Population : ", res[i].population);
-//     }
-// };
+    for (var i = 0; i < res.length; i++) {
+        console.log("Country : ", res[i].name.common, ", Region : ", res[i].region, ", SubRegion : ", res[i].subregion, ", Population : ", res[i].population);
+    }
+};
 
 
-// //displays my github repos
-// var requestRepo = new XMLHttpRequest();
-//     requestRepo.open("GET", "https://api.github.com/users/jena369/repos");
-//     requestRepo.send();
+//displays my github repos
+var requestRepo = new XMLHttpRequest();
+    requestRepo.open("GET", "https://api.github.com/users/jena369/repos");
+    requestRepo.send();
 
-//     requestRepo.onload = () => {
-//         var result = JSON.parse(requestRepo.response);
+    requestRepo.onload = () => {
+        var result = JSON.parse(requestRepo.response);
         
-//         console.log("My REPO-NAMEs: ",result);
-//     };
+        console.log("My REPO-NAMEs: ",result);
+    };
 
 //loading photos from an API
 var requestPhoto = new XMLHttpRequest();
